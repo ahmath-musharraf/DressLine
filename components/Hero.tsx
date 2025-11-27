@@ -60,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({ onShopNow }) => {
                    <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
                    <text className="text-[11px] font-bold uppercase tracking-[0.15em] fill-black">
                      <textPath href="#circlePath" startOffset="0%">
-                       New Arrivals • Dress Line • 
+                       New Arrivals  •  Dress Line  •  
                      </textPath>
                    </text>
                  </svg>
