@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ onShopNow }) => {
           <div className="md:col-span-5 flex flex-col items-start pt-12 md:pt-0">
             <div className="flex items-center gap-2 mb-6 animate-fade-in-up">
               <span className="w-8 h-[1px] bg-brand-gold"></span>
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-gray-500">Est. 2024 Collection</span>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-gray-500">Est. 1999 – Weaving Dreams Into Every Thread</span>
             </div>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold leading-[0.9] text-black mb-6 animate-fade-in-up [animation-delay:200ms]">
@@ -60,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({ onShopNow }) => {
                    <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
                    <text className="text-[11px] font-bold uppercase tracking-[0.15em] fill-black">
                      <textPath href="#circlePath" startOffset="0%">
-                       New Arrivals • Dress Line • Fashion •
+                       New Arrivals • Dress Line • 
                      </textPath>
                    </text>
                  </svg>
