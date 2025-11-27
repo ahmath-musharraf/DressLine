@@ -22,7 +22,7 @@ export const SHOP_DETAILS: ShopDetails = {
 // Replace this URL with your actual logo image URL
 export const LOGO_URL = "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/DressLineLogo.png"; 
 // For dark background (Footer) - utilizing a white text version or CSS filter in component
-export const LOGO_URL_WHITE = "https://placehold.co/180x50/transparent/white?text=Dress+Line&font=playfair-display";
+export const LOGO_URL_WHITE = "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/DressLineLogoW.png";
 
 export const NAV_LINKS = [
   { name: "Home" },
