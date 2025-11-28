@@ -73,7 +73,6 @@ export const MOCK_PRODUCTS: Product[] = [
     image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/8.jpg",
     images: [
       "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/8.jpg"
-     
     ],
     category: "Women",
     tag: "Best Seller",
@@ -87,7 +86,6 @@ export const MOCK_PRODUCTS: Product[] = [
     image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/6.jpg",
     images: [
       "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/6.jpg"
-      
     ],
     category: "Women",
     tag: "Best Seller",
@@ -102,7 +100,6 @@ export const MOCK_PRODUCTS: Product[] = [
     image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/7.jpg",
     images: [
       "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/7.jpg"
-      
     ],
     category: "Women",
     tag: "Sale"
@@ -116,7 +113,6 @@ export const MOCK_PRODUCTS: Product[] = [
     image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/10.jpg",
     images: [
       "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/10.jpg"
-      
     ],
     category: "Women",
     sizes: ['S', 'M', 'L', 'XL']
@@ -129,7 +125,6 @@ export const MOCK_PRODUCTS: Product[] = [
     image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/9.jpg",
     images: [
       "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/9.jpg"
-      
     ],
     category: "Women",
     tag: "New"
