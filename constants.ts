@@ -35,6 +35,8 @@ export const NAV_LINKS = [
   { name: "Shoes & Bags" }
 ];
 
+const DEFAULT_SIZES = ['S', 'M', 'L', 'XL', 'XXL', 'XXXL'];
+
 export const MOCK_PRODUCTS: Product[] = [
   {
     id: 1,
@@ -49,7 +51,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800"
     ],
     category: "Women",
-    tag: "Sale"
+    tag: "Sale",
+    sizes: DEFAULT_SIZES
   },
   {
     id: 2,
@@ -63,7 +66,8 @@ export const MOCK_PRODUCTS: Product[] = [
        "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=800"
     ],
     category: "Women",
-    tag: "New"
+    tag: "New",
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 3,
@@ -76,7 +80,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1515347619252-60a6bf4fffce?auto=format&fit=crop&q=80&w=800"
     ],
     category: "Women",
-    tag: "Best Seller"
+    tag: "Best Seller",
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 4,
@@ -88,7 +93,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1582142327304-1c988585383c?auto=format&fit=crop&q=80&w=800"
     ],
-    category: "Women"
+    category: "Women",
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 5,
@@ -141,7 +147,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800"
     ],
     category: "Women",
-    tag: "Sale"
+    tag: "Sale",
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 9,
@@ -154,7 +161,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800"
     ],
     category: "Women",
-    tag: "New"
+    tag: "New",
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 10,
