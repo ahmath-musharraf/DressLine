@@ -40,30 +40,26 @@ const DEFAULT_SIZES = ['S', 'M', 'L', 'XL', 'XXL', 'XXXL'];
 export const MOCK_PRODUCTS: Product[] = [
   {
     id: 1,
-    name: "Floral Summer Maxi Dress",
+    name: "Work Midi Length Dress",
     brand: "Dress Line Exclusive",
-    price: 4500,
-    originalPrice: 6500,
-    image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=800",
+    price: 3500,
+    originalPrice: 4500,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/5.jpg",
     images: [
-      "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/5.jpg"
     ],
     category: "Women",
     tag: "Sale",
-    sizes: DEFAULT_SIZES
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 2,
-    name: "Elegant Satin Evening Gown",
-    brand: "Luxe",
-    price: 12500,
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800",
+    name: "Two Piece Set",
+    brand: "Dress Line Exclusive",
+    price: 4200,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/1.jpg",
     images: [
-       "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800",
-       "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&q=80&w=800",
-       "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/1.jpg"
     ],
     category: "Women",
     tag: "New",
@@ -71,13 +67,13 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: 3,
-    name: "Casual Denim Jacket",
-    brand: "Urban Edge",
-    price: 3800,
-    image: "https://images.unsplash.com/photo-1544642899-f0d6e5f6ed6f?auto=format&fit=crop&q=80&w=800",
+    name: "Two Piece Set",
+    brand: "Dress Line Exclusive",
+    price: 4200,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/8.jpg",
     images: [
-      "https://images.unsplash.com/photo-1544642899-f0d6e5f6ed6f?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1515347619252-60a6bf4fffce?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/8.jpg"
+     
     ],
     category: "Women",
     tag: "Best Seller",
@@ -85,56 +81,59 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: 4,
-    name: "Pleated Midi Skirt",
-    brand: "Chic",
-    price: 3200,
-    image: "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&q=80&w=800",
+    name: "Denim Short",
+    brand: "Dress Line Exclusive",
+    price: 2800,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/6.jpg",
     images: [
-      "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1582142327304-1c988585383c?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/6.jpg"
+      
     ],
     category: "Women",
-    sizes: ['S', 'M', 'L']
+    tag: "Best Seller",
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 5,
-    name: "Leather Crossbody Bag",
-    brand: "Luxe",
-    price: 5500,
-    originalPrice: 7000,
-    image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800",
+    name: "Long Top",
+    brand: "Dress Line Exclusive",
+    price: 2700,
+    originalPrice: 4000,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/7.jpg",
     images: [
-      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/7.jpg"
+      
     ],
     category: "Women",
     tag: "Sale"
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 6,
-    name: "Modern Butterfly Abaya",
-    brand: "Modest Wear",
-    price: 7900,
-    image: "https://images.unsplash.com/photo-1607567807755-9a4f49971987?auto=format&fit=crop&q=80&w=800",
+    name: "Work Midi Length Dress",
+    brand: "Dress Line Exclusive",
+    price: 3800,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/10.jpg",
     images: [
-      "https://images.unsplash.com/photo-1607567807755-9a4f49971987?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/10.jpg"
+      
     ],
     category: "Women",
-    sizes: ['L', 'XL', 'XXL', 'XXXL']
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 7,
-    name: "Traditional Silk Saree",
-    brand: "Elegant",
-    price: 18000,
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800",
+    name: "Ladies T - Shirt Short Sleeve",
+    brand: "Dress Line Exclusive",
+    price: 2300,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/9.jpg",
     images: [
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1610189012906-47833d7b43a9?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/9.jpg"
+      
     ],
     category: "Women",
     tag: "New"
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 8,
