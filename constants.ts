@@ -102,7 +102,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/7.jpg"
     ],
     category: "Women",
-    tag: "Sale"
+    tag: "Sale",
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -127,7 +127,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/9.jpg"
     ],
     category: "Women",
-    tag: "New"
+    tag: "New",
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
