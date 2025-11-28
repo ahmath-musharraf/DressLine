@@ -1,11 +1,12 @@
+
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { Product } from '../types';
+import { Product, CartItem } from '../types';
 import { Heart, Eye, X, ShoppingBag, Share2, Check } from 'lucide-react';
 
 interface ProductCardProps {
   product: Product;
-  onAddToCart: (product: Product) => void;
+  onAddToCart: (product: Product | CartItem) => void;
   onToggleWishlist: (product: Product) => void;
   isInWishlist: boolean;
 }
@@ -77,18 +78,22 @@ const ProductCard: React.FC<ProductCardProps> = ({
     if (isAdding) return;
     
     setIsAdding(true);
+    // If sizes are available, we ideally want to prompt for size, but for simple "Add to Bag", we add as is.
+    // In Quick View, we can handle size selection.
     onAddToCart(product);
     setTimeout(() => setIsAdding(false), 1500);
   };
 
   const QuickViewModal = () => {
     const [activeImage, setActiveImage] = useState(product.image);
+    const [selectedSize, setSelectedSize] = useState<string>('');
+    
     const galleryImages = product.images?.length 
       ? product.images 
       : [product.image, product.image, product.image, product.image];
 
     const inquiryText = encodeURIComponent(
-      `Hi, I'm interested in *${product.name}* (Ref: #${product.id}). Could you please provide more details?`
+      `Hi, I'm interested in *${product.name}* (Ref: #${product.id})${selectedSize ? ` Size: ${selectedSize}` : ''}. Could you please provide more details?`
     );
     const whatsappInquiryLink = `https://wa.me/94768685970?text=${inquiryText}`;
 
@@ -165,6 +170,29 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
             <div className="w-full h-px bg-gray-100 mb-6"></div>
 
+            {/* Size Selector */}
+            {product.sizes && product.sizes.length > 0 && (
+              <div className="mb-8">
+                <span className="text-xs font-bold uppercase tracking-wider text-gray-900 block mb-3">Select Size</span>
+                <div className="flex flex-wrap gap-2">
+                  {product.sizes.map((size) => (
+                    <button
+                      key={size}
+                      onClick={() => setSelectedSize(size)}
+                      className={`min-w-[40px] h-10 px-3 border flex items-center justify-center text-xs font-bold transition-all focus:outline-none ${
+                        selectedSize === size 
+                          ? 'border-black bg-black text-white' 
+                          : 'border-gray-200 text-gray-600 hover:border-black'
+                      }`}
+                    >
+                      {size}
+                    </button>
+                  ))}
+                </div>
+                {selectedSize && <p className="text-xs text-gray-500 mt-2">Selected: <span className="font-bold text-black">{selectedSize}</span></p>}
+              </div>
+            )}
+
             <p className="text-gray-600 mb-8 leading-relaxed text-sm">
               Experience the elegance of {product.name}. Designed by {product.brand} for the modern woman who values style and comfort. 
               This piece features premium materials and a flattering cut, making it a perfect addition to your {product.category} collection.
@@ -174,10 +202,22 @@ const ProductCard: React.FC<ProductCardProps> = ({
               <button 
                 onClick={(e) => {
                   e.stopPropagation();
-                  onAddToCart(product);
+                  // Check if size is required but not selected
+                  if (product.sizes && product.sizes.length > 0 && !selectedSize) {
+                    alert('Please select a size');
+                    return;
+                  }
+                  // Pass product with selected size if applicable
+                  const productToAdd = selectedSize ? { ...product, selectedSize } : product;
+                  onAddToCart(productToAdd as CartItem);
                   setShowQuickView(false);
                 }}
-                className="w-full bg-black text-white py-4 font-bold uppercase text-xs tracking-widest hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                className={`w-full py-4 font-bold uppercase text-xs tracking-widest transition-colors flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black ${
+                   product.sizes && product.sizes.length > 0 && !selectedSize 
+                   ? 'bg-gray-200 text-gray-500 cursor-not-allowed' 
+                   : 'bg-black text-white hover:bg-gray-800'
+                }`}
+                disabled={product.sizes && product.sizes.length > 0 && !selectedSize}
               >
                 <ShoppingBag size={16} aria-hidden="true" /> Add to Bag
               </button>
@@ -306,7 +346,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                     e.stopPropagation();
                     setShowQuickView(true);
                 }}
-                className="bg-white text-black px-6 py-3 font-bold uppercase text-[10px] tracking-widest shadow-xl hover:bg-black hover:text-white transition-colors flex items-center gap-2 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-black"
+                className="bg-white text-black px-6 py-3 font-bold uppercase text-[10px] tracking-widest shadow-xl hover:bg-black hover:text-white transition-colors flex items-center gap-2 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-black scale-95 duration-500 ease-out hover:scale-100"
                 aria-label={`Quick view of ${product.name}`}
             >
                 <Eye size={14} aria-hidden="true" /> Quick View
