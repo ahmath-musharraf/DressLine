@@ -1,3 +1,4 @@
+
 export interface Product {
   id: number;
   name: string;
@@ -8,10 +9,12 @@ export interface Product {
   images?: string[];
   category: 'Women' | 'Men' | 'Kids' | 'Beauty' | 'Home';
   tag?: 'New' | 'Sale' | 'Best Seller';
+  sizes?: string[];
 }
 
 export interface CartItem extends Product {
   quantity: number;
+  selectedSize?: string;
 }
 
 export interface Founder {
