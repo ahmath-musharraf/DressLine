@@ -94,7 +94,7 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1582142327304-1c988585383c?auto=format&fit=crop&q=80&w=800"
     ],
     category: "Women",
-    sizes: ['S', 'M', 'L', 'XL']
+    sizes: ['S', 'M', 'L']
   },
   {
     id: 5,
@@ -120,7 +120,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1607567807755-9a4f49971987?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&q=80&w=800"
     ],
-    category: "Women"
+    category: "Women",
+    sizes: ['L', 'XL', 'XXL', 'XXXL']
   },
   {
     id: 7,
@@ -148,7 +149,7 @@ export const MOCK_PRODUCTS: Product[] = [
     ],
     category: "Women",
     tag: "Sale",
-    sizes: ['S', 'M', 'L', 'XL']
+    sizes: DEFAULT_SIZES
   },
   {
     id: 9,
@@ -162,7 +163,7 @@ export const MOCK_PRODUCTS: Product[] = [
     ],
     category: "Women",
     tag: "New",
-    sizes: ['S', 'M', 'L', 'XL']
+    sizes: ['M', 'L', 'XL', 'XXL']
   },
   {
     id: 10,
@@ -174,7 +175,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1583391733958-e02d07e8693d?auto=format&fit=crop&q=80&w=800",
       "https://images.unsplash.com/photo-1605763240004-7e93b172d754?auto=format&fit=crop&q=80&w=800"
     ],
-    category: "Women"
+    category: "Women",
+    sizes: DEFAULT_SIZES
   },
   {
     id: 11,
@@ -187,7 +189,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1518953789413-9598f0909795?auto=format&fit=crop&q=80&w=800"
     ],
     category: "Women",
-    tag: "Best Seller"
+    tag: "Best Seller",
+    sizes: ['36', '37', '38', '39', '40', '41']
   },
   {
     id: 12,
@@ -200,7 +203,8 @@ export const MOCK_PRODUCTS: Product[] = [
       "https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?auto=format&fit=crop&q=80&w=800"
     ],
     category: "Women",
-    tag: "Sale"
+    tag: "Sale",
+    sizes: DEFAULT_SIZES
   },
   {
     id: 13,
@@ -255,6 +259,48 @@ export const MOCK_REVIEWS: Review[] = [
     rating: 5,
     comment: "The best place for modest wear. Their new collection is beautiful.",
     date: "1 week ago"
+  },
+  {
+    id: 5,
+    userName: "Mariyam K.",
+    rating: 5,
+    comment: "Fast delivery within Batticaloa. The material is so soft and comfortable.",
+    date: "2 days ago"
+  },
+  {
+    id: 6,
+    userName: "Sarah L.",
+    rating: 5,
+    comment: "I love their handbag collection. Premium quality at affordable prices.",
+    date: "5 days ago"
+  },
+  {
+    id: 7,
+    userName: "Nusra F.",
+    rating: 4,
+    comment: "Good collection of heels. Comfortable for daily wear.",
+    date: "1 week ago"
+  },
+  {
+    id: 8,
+    userName: "Rifka A.",
+    rating: 5,
+    comment: "The customer service is excellent. They helped me choose the right size.",
+    date: "2 weeks ago"
+  },
+  {
+    id: 9,
+    userName: "Tharushi J.",
+    rating: 5,
+    comment: "Highly recommend their casual wear. Stylish and durable.",
+    date: "3 weeks ago"
+  },
+  {
+    id: 10,
+    userName: "Shazna N.",
+    rating: 5,
+    comment: "My go-to shop for all fashion needs. Love the ambiance of the store too.",
+    date: "1 month ago"
   }
 ];
 
