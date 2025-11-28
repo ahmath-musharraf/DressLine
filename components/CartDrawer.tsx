@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { X, Minus, Plus, Trash2, ShoppingBag } from 'lucide-react';
 import { CartItem } from '../types';
@@ -26,7 +27,8 @@ const CartDrawer: React.FC<CartDrawerProps> = ({
     let message = `*New Order Request via Dress Line Web*\n\n`;
     
     cartItems.forEach((item, index) => {
-      message += `${index + 1}. *${item.name}* (Ref: #${item.id})\n`;
+      const sizeInfo = item.selectedSize ? ` - Size: ${item.selectedSize}` : '';
+      message += `${index + 1}. *${item.name}* (Ref: #${item.id})${sizeInfo}\n`;
       message += `   Brand: ${item.brand}\n`;
       message += `   Qty: ${item.quantity} x LKR ${item.price.toLocaleString()}\n`;
       message += `   Subtotal: LKR ${(item.price * item.quantity).toLocaleString()}\n\n`;
@@ -82,7 +84,7 @@ const CartDrawer: React.FC<CartDrawerProps> = ({
           ) : (
             cartItems.map((item, index) => (
               <div 
-                key={item.id} 
+                key={`${item.id}-${item.selectedSize || 'nosize'}`} 
                 className="flex gap-4 animate-fade-in-up" 
                 style={{ animationDelay: `${index * 50}ms` }}
               >
@@ -102,6 +104,9 @@ const CartDrawer: React.FC<CartDrawerProps> = ({
                       </button>
                     </div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide mt-1">{item.brand}</p>
+                    {item.selectedSize && (
+                      <p className="text-xs font-bold text-black mt-1">Size: {item.selectedSize}</p>
+                    )}
                   </div>
                   <div className="flex justify-between items-end">
                     <div className="flex items-center border border-gray-200 rounded-sm">
