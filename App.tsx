@@ -156,7 +156,7 @@ function App() {
         return t.includes('shoe') || t.includes('bag') || t.includes('heel') || t.includes('clutch') || t.includes('sneaker') || t.includes('sandal');
      }
      if (term === 'dresses') return product.name.toLowerCase().includes('dress') || product.name.toLowerCase().includes('gown') || product.name.toLowerCase().includes('frock') || product.name.toLowerCase().includes('maxi');
-     if (term === 'abayas') return product.name.toLowerCase().includes('abaya');
+     if (term === 'Salwar') return product.name.toLowerCase().includes('Salwar');
      if (term === 'sarees') return product.name.toLowerCase().includes('saree');
      if (term === 'tops') return product.name.toLowerCase().includes('top') || product.name.toLowerCase().includes('shirt') || product.name.toLowerCase().includes('blouse') || product.name.toLowerCase().includes('kurti');
 
@@ -303,18 +303,18 @@ function App() {
 
                    {/* Right Split Promos */}
                    <div className="flex flex-col gap-4 h-[400px] md:h-[500px]">
-                      <div className="flex-1 relative bg-gray-100 group overflow-hidden cursor-pointer" tabIndex={0} role="link" aria-label="Shop Designer Bags" onClick={() => handleCategorySelect('Shoes & Bags')}>
+                      <div className="flex-1 relative bg-gray-100 group overflow-hidden cursor-pointer" tabIndex={0} role="link" aria-label="Shop Salwar Collection" onClick={() => handleCategorySelect('Salwar')}>
                         <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&q=80&w=800" alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" aria-hidden="true" />
                         <div className="absolute inset-0 flex flex-col justify-center items-start p-8 bg-black/10 group-hover:bg-black/20 transition-colors">
                           <span className="bg-white text-black text-[10px] font-bold px-2 py-1 uppercase tracking-wider mb-3 shadow-md">Trending</span>
-                          <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-md">Designer Bags</h3>
+                          <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-md">Latest Salwars </h3>
                           <button className="bg-black text-white px-6 py-2 text-xs font-bold uppercase hover:bg-white hover:text-black transition-all transform group-hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-white">Shop Now</button>
                         </div>
                       </div>
-                      <div className="flex-1 relative bg-gray-100 group overflow-hidden cursor-pointer" tabIndex={0} role="link" aria-label="Shop Footwear Collection" onClick={() => handleCategorySelect('Shoes & Bags')}>
+                      <div className="flex-1 relative bg-gray-100 group overflow-hidden cursor-pointer" tabIndex={0} role="link" aria-label="Shop Top Collection" onClick={() => handleCategorySelect('Top')}>
                         <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80&w=800" alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" aria-hidden="true" />
                         <div className="absolute inset-0 flex flex-col justify-center items-end p-8 bg-black/10 group-hover:bg-black/20 transition-colors text-right">
-                           <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-md">Footwear <br/> Collection</h3>
+                           <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-md">Leadies Top<br/> Collection</h3>
                            <p className="text-white text-xs mb-4 drop-shadow-md">Complete your look</p>
                            <span className="text-white text-xs font-bold uppercase border-b border-white pb-1 group-hover:border-brand-gold group-hover:text-brand-gold transition-colors">Explore</span>
                         </div>
