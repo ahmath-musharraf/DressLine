@@ -304,7 +304,7 @@ function App() {
                    {/* Right Split Promos */}
                    <div className="flex flex-col gap-4 h-[400px] md:h-[500px]">
                       <div className="flex-1 relative bg-gray-100 group overflow-hidden cursor-pointer" tabIndex={0} role="link" aria-label="Shop Salwar Collection" onClick={() => handleCategorySelect('Salwar')}>
-                        <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&q=80&w=800" alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" aria-hidden="true" />
+                        <img src="https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/SalCover.jpg" alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" aria-hidden="true" />
                         <div className="absolute inset-0 flex flex-col justify-center items-start p-8 bg-black/10 group-hover:bg-black/20 transition-colors">
                           <span className="bg-white text-black text-[10px] font-bold px-2 py-1 uppercase tracking-wider mb-3 shadow-md">Trending</span>
                           <h3 className="text-2xl font-bold text-white mb-4 drop-shadow-md">Latest Salwars </h3>
