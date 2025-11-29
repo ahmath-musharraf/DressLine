@@ -159,68 +159,43 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: 10,
-    name: "Cotton Linen Kurti",
-    brand: "Ethnic Weave",
-    price: 4200,
-    image: "https://images.unsplash.com/photo-1583391733958-e02d07e8693d?auto=format&fit=crop&q=80&w=800",
+    name: "Two Piece Set",
+    brand: "Dress Line Exclusive",
+    price: 4600,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/2.jpg",
     images: [
-      "https://images.unsplash.com/photo-1583391733958-e02d07e8693d?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1605763240004-7e93b172d754?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/2.jpg"
     ],
     category: "Women",
-    sizes: DEFAULT_SIZES
+    tag: "New",
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 11,
-    name: "Classic Beige Heels",
-    brand: "Step Up",
-    price: 6500,
-    image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80&w=800",
+    name: "Maxi Dress",
+    brand: "Dress Line Exclusive",
+    price: 3200,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/4.jpg",
     images: [
-      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1518953789413-9598f0909795?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/4.jpg"
     ],
     category: "Women",
     tag: "Best Seller",
-    sizes: ['36', '37', '38', '39', '40', '41']
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 12,
-    name: "Floral Jumpsuit",
-    brand: "Chic",
-    price: 5800,
-    originalPrice: 7500,
-    image: "https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?auto=format&fit=crop&q=80&w=800",
+    name: "long Frock",
+    brand: "Dress Line Exclusive",
+    price: 3400,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/12.jpg",
     images: [
-      "https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/12.jpg"
     ],
     category: "Women",
     tag: "Sale",
-    sizes: DEFAULT_SIZES
+    sizes: ['S', 'M', 'L', 'XL']
   },
-  {
-    id: 13,
-    name: "Designer Tote Bag",
-    brand: "Luxe",
-    price: 9500,
-    image: "https://images.unsplash.com/photo-1590874103328-3af216886c78?auto=format&fit=crop&q=80&w=800",
-    images: [
-      "https://images.unsplash.com/photo-1590874103328-3af216886c78?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&q=80&w=800"
-    ],
-    category: "Women"
-  },
-  {
-    id: 14,
-    name: "Georgette Party Saree",
-    brand: "Elegant",
-    price: 14500,
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800",
-    images: [
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800"
-    ],
-    category: "Women"
-  }
 ];
 
 export const MOCK_REVIEWS: Review[] = [
