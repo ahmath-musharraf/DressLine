@@ -152,6 +152,7 @@ export const MOCK_PRODUCTS: Product[] = [
     image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/3.jpg",
     images: [
       "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/3.jpg"
+    ],
     category: "Women",
     tag: "New",
     sizes: ['S', 'M', 'L', 'XL']
