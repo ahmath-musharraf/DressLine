@@ -132,32 +132,29 @@ export const MOCK_PRODUCTS: Product[] = [
   },
   {
     id: 8,
-    name: "Summer Floral Top",
-    brand: "Breezy",
-    price: 2500,
-    originalPrice: 3500,
-    image: "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?auto=format&fit=crop&q=80&w=800",
+    name: "Mini Dress",
+    brand: "Dress Line Exclusive",
+    price: 2999,
+    originalPrice: 4500,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/11.jpg",
     images: [
-      "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=800"
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/11.jpg"
     ],
     category: "Women",
     tag: "Sale",
-    sizes: DEFAULT_SIZES
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 9,
-    name: "Embroidered Chiffon Maxi",
-    brand: "Luxe",
-    price: 8900,
-    image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800",
+    name: "Ladies Blouse",
+    brand: "Dress Line Exclusive",
+    price: 2300,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/3.jpg",
     images: [
-      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&q=80&w=800"
-    ],
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/3.jpg"
     category: "Women",
     tag: "New",
-    sizes: ['M', 'L', 'XL', 'XXL']
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 10,
