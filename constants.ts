@@ -29,7 +29,7 @@ export const NAV_LINKS = [
   { name: "New Arrivals" },
   { name: "Sale" },
   { name: "Dresses" },
-  { name: "Abayas" },
+  { name: "Salwar" },
   { name: "Sarees" },
   { name: "Tops" },
   { name: "Shoes & Bags" }
