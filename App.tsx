@@ -328,10 +328,10 @@ function App() {
             <section className="grid grid-cols-1 md:grid-cols-2" aria-labelledby="sale-banner-title">
                 <div className="bg-[#f5f5f5] p-12 md:p-24 flex flex-col justify-center items-start group">
                    <span className="text-red-600 font-bold text-sm uppercase tracking-widest mb-4 animate-pulse">Sale is Live</span>
-                   <h2 id="sale-banner-title" className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">Up to 70% off <br/> on Abayas</h2>
+                   <h2 id="sale-banner-title" className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">Up to 50% off <br/> on Blouses</h2>
                    <p className="text-gray-600 mb-8 max-w-md">Grab your favorites before they are gone. Limited stocks available on selected premium brands.</p>
                    <a 
-                     href={`https://wa.me/94768685970?text=${encodeURIComponent("Hello Dress Line! ✨ I spotted your 70% OFF Abaya Sale and I'm interested! 🛍️ Can you share the available designs and prices? I don't want to miss out!")}`}
+                     href={`https://wa.me/94768685970?text=${encodeURIComponent("Hello Dress Line! ✨ I spotted your 50% OFF Blouses Sale and I'm interested! 🛍️ Can you share the available designs and prices? I don't want to miss out!")}`}
                      target="_blank" 
                      rel="noopener noreferrer"
                      className="bg-black text-white px-8 py-4 font-bold uppercase text-xs tracking-widest hover:bg-gray-800 transition-all flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black hover:scale-105 transform duration-300"
@@ -343,7 +343,7 @@ function App() {
                    </a>
                 </div>
                 <div className="h-[400px] md:h-auto relative overflow-hidden group">
-                  <img src="https://images.unsplash.com/photo-1485230946387-43302e56488b?auto=format&fit=crop&q=80&w=1000" alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" aria-hidden="true" />
+                  <img src="https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/SaleBannerImage.jpeg" alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" aria-hidden="true" />
                 </div>
             </section>
 
