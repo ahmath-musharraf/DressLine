@@ -200,7 +200,7 @@ export const MOCK_PRODUCTS: Product[] = [
     id: 13,
     name: "Salwar",
     brand: "Dress Line Exclusive",
-    price: 10,800,
+    price: 10800,
     image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/Sal.jpg",
     images: [
       "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/Sal.jpg"
