@@ -196,6 +196,19 @@ export const MOCK_PRODUCTS: Product[] = [
     tag: "Sale",
     sizes: ['S', 'M', 'L', 'XL']
   },
+  {
+    id: 13,
+    name: "Salwar",
+    brand: "Dress Line Exclusive",
+    price: 10,800,
+    image: "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/Sal.jpg",
+    images: [
+      "https://raw.githubusercontent.com/ahmath-musharraf/DressLine/refs/heads/main/Image/Sal.jpg"
+    ],
+    category: "Women",
+    tag: "New",
+    sizes: ['XL']
+  }, 
 ];
 
 export const MOCK_REVIEWS: Review[] = [
